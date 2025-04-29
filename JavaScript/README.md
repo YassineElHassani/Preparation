@@ -73,7 +73,7 @@ This repository contains JavaScript exercises designed to improve your problem-s
 8. Count how many employees are in the "Développement" department
    - **Function Name**: `countEmployeesInDepartment`
    - **Input**: `employees, "Développement"`
-   - **Output**: `15`
+   - **Output**: `18`
    - **Expected Result**: Returns the number of employees in the "Développement" department.
 
 9. List all unique department names

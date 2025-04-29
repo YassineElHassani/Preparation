@@ -51,7 +51,7 @@ function countEmployees() {
     for (let i = 0; i < employees.length; i++) {
         count++
     }
-    
+
     console.log('Employees number: ', count);
 }
 
@@ -73,3 +73,68 @@ hasInactiveEmployees();
 console.log('======================================');
 
 //6. Calculate the average age of all employees
+function calculateAverageAge() {
+    let sumAges = 0;
+    let count = 0;
+
+    for (let i = 0; i < employees.length; i++) {
+        count++;
+        sumAges += employees[i].age;
+    }
+    
+    console.log('Average Age: ', (sumAges / count));
+}
+
+calculateAverageAge();
+console.log('======================================');
+
+//7. Find the employee with the highest salary
+function getHighestPaidEmployee() {
+    let maxSalary = 0;
+
+    for(let i = 0; i < employees.length; i++) {
+        if(employees[i].salary > maxSalary) {
+            maxSalary = employees[i].salary;
+        }
+    }
+    
+    employees.forEach(employer => {
+        if(maxSalary == employer.salary) {
+            console.log(employer);
+        }
+    });
+}
+
+getHighestPaidEmployee();
+console.log('======================================');
+
+//8. Count how many employees are in the "Développement" department
+function countEmployeesInDepartment() {
+    let count = 0;
+
+    for(let i = 0; i < employees.length; i++) {
+        if(employees[i].department == "Développement") {
+            count++;
+        }
+    }
+
+    console.log(count);
+}
+
+countEmployeesInDepartment();
+console.log('======================================');
+
+//9. List all unique department names
+function getUniqueDepartments() {
+    let departments = [];
+
+    for(let i = 0; i < employees.length; i++) {
+        if (!departments.includes(employees[i].department)) {
+            departments.push(employees[i].department);
+        }
+    }
+
+    console.log(departments);
+}
+
+getUniqueDepartments();
