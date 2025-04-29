@@ -28,3 +28,34 @@ employees.forEach(employer => {
 console.log('======================================');
 
 //3. Get the department of employee with ID 5
+
+for(let i = 0; i < employees.length; i++) {
+    if(employees[i].id == 5) {
+        console.log(employees[i].department);
+    }
+}
+
+console.log('======================================');
+
+//4. Count how many employees are in the array
+
+let count = 0;
+
+for(let i = 0; i < employees.length; i++) {
+    count++
+}
+
+console.log('Employees number: ', count);
+console.log('======================================');
+
+//5. Check if any employee is inactive (isActive: false)
+
+for(let i = 0; i < employees.length; i++) {
+    if(employees[i].isActive == false) {
+        console.log(employees[i].firstName);
+    }
+}
+
+console.log('======================================');
+
+//6. Calculate the average age of all employees
