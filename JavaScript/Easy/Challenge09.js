@@ -1,7 +1,8 @@
 const { employees } = require('../dataset');
 
 //9. List all unique department names
-function getUniqueDepartments() {
+
+function getUniqueDepartments(employees) {
     let departments = [];
 
     for(let i = 0; i < employees.length; i++) {
@@ -13,4 +14,4 @@ function getUniqueDepartments() {
     console.log(departments);
 }
 
-getUniqueDepartments();
+getUniqueDepartments(employees);

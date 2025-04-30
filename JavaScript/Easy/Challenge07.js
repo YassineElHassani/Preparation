@@ -1,7 +1,8 @@
 const { employees } = require('../dataset');
 
 //7. Find the employee with the highest salary
-function getHighestPaidEmployee() {
+
+function getHighestPaidEmployee(employees) {
     let maxSalary = 0;
 
     for(let i = 0; i < employees.length; i++) {
@@ -17,4 +18,4 @@ function getHighestPaidEmployee() {
     });
 }
 
-getHighestPaidEmployee();
+getHighestPaidEmployee(employees);

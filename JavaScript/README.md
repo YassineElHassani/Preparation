@@ -96,7 +96,7 @@ This repository contains JavaScript exercises designed to improve your problem-s
 11. Count how many employees speak English
     - **Function Name**: `countEnglishSpeakingEmployees`
     - **Input**: `employees`
-    - **Output**: `45`
+    - **Output**: `46`
     - **Expected Result**: Returns the number of employees who speak English.
 
 12. Find all employees who work on "Project Gamma"

@@ -1,8 +1,10 @@
 const { employees } = require('../dataset');
 
 //2. Get the last name of the last employee
-function getLastEmployeeLastName() {
+
+function getLastEmployeeLastName(employees) {
     let maxID = 1;
+
     for (let i = 0; i < employees.length; i++) {
         if (employees[i].id > maxID) {
             maxID = employees[i].id;
@@ -16,4 +18,4 @@ function getLastEmployeeLastName() {
     })
 }
 
-getLastEmployeeLastName();
+getLastEmployeeLastName(employees);

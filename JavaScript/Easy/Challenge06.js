@@ -1,7 +1,8 @@
 const { employees } = require('../dataset');
 
 //6. Calculate the average age of all employees
-function calculateAverageAge() {
+
+function calculateAverageAge(employees) {
     let sumAges = 0;
     let count = 0;
 
@@ -13,4 +14,4 @@ function calculateAverageAge() {
     console.log('Average Age: ', (sumAges / count));
 }
 
-calculateAverageAge();
+calculateAverageAge(employees);
