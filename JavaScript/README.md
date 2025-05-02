@@ -138,7 +138,7 @@ This repository contains JavaScript exercises designed to improve your problem-s
 18. Find the most common skill among all employees
     - **Function Name**: `getMostCommonSkill`
     - **Input**: `employees`
-    - **Output**: `"JavaScript"`
+    - **Output**: `"Python"`
     - **Expected Result**: Returns the most common skill among all employees.
 
 19. List employees with a salary above 60000
